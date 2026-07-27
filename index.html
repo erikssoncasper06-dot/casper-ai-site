@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Casper AI — personlig shoppingassistent</title>
+  <meta name="description" content="Casper AI är en personlig AI-assistent som söker kläder i många butiker samtidigt och rekommenderar plagg utifrån stil, storlek och budget." />
+  <style>
+    :root {
+      --bg: #0d1117; --panel: #161b22; --text: #e6edf3; --muted: #8b949e;
+      --accent: #7c9cf5; --border: #21262d;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem 2rem; flex: 1; }
+    .logo { font-size: 1.05rem; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+    h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); line-height: 1.15; margin: 1rem 0 1.2rem; }
+    .lead { color: var(--muted); font-size: 1.12rem; margin-bottom: 2.5rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 1.2rem; }
+    .card h2 { font-size: 1rem; margin-bottom: .4rem; }
+    .card p { color: var(--muted); font-size: .92rem; }
+    .note { background: var(--panel); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+      border-radius: 8px; padding: 1rem 1.2rem; color: var(--muted); font-size: .92rem; margin-bottom: 2.5rem; }
+    footer { text-align: center; padding: 1.5rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border); }
+    a { color: var(--accent); text-decoration: none; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #fafbfc; --panel: #ffffff; --text: #1c2128; --muted: #57606a; --border: #d8dee4; --accent: #3b5bdb; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo">Casper AI</div>
+    <h1>En personlig shoppingassistent som söker i många butiker samtidigt.</h1>
+    <p class="lead">
+      Casper AI är en privat AI-assistent för iPhone. Shoppingdelen låter dig beskriva
+      ett plagg med egna ord — till exempel &rdquo;mörkbrun mockajacka under 3&nbsp;000 kr&rdquo; —
+      och söker sedan i flera butiker och marknadsplatser parallellt. Resultaten rankas
+      efter hur väl de matchar din stilprofil: plaggtyp, märke, färg, storlek, budget och skick.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h2>Fritextsök</h2>
+        <p>Beskriv plagget som du skulle säga det. Assistenten tolkar typ, färg, material, märke och budget.</p>
+      </div>
+      <div class="card">
+        <h2>Många källor</h2>
+        <p>Nya och begagnade plagg från flera butiker och marknadsplatser vävs ihop till en träfflista utan dubbletter.</p>
+      </div>
+      <div class="card">
+        <h2>Personlig rankning</h2>
+        <p>Träffarna sorteras mot din stilprofil — rätt storlek i lager, favoritmärken och prisläge väger tyngst.</p>
+      </div>
+      <div class="card">
+        <h2>Bevakningar</h2>
+        <p>Följ ett plagg och få besked vid prisfall eller när din storlek kommer tillbaka i lager.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      Casper AI kan innehålla affiliatelänkar till butiker. Klickar du på en sådan länk och
+      genomför ett köp kan Casper AI få en provision från butiken — priset för dig påverkas inte.
+      Rekommendationerna styrs alltid av matchningen mot din sökning, aldrig av provisionen.
+    </div>
+  </main>
+  <footer>
+    Kontakt: <a href="mailto:erikssoncasper06@gmail.com">erikssoncasper06@gmail.com</a> · Sverige
+  </footer>
+</body>
+</html>
